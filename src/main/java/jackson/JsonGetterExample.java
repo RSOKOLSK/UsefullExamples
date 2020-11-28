@@ -8,6 +8,7 @@ public class JsonGetterExample {
     public static void main(String[] args) throws JsonProcessingException {
         MyBean bean = new MyBean(1, "My bean");
 
+        //TODO: JsonGetter pozwala na serializowanie do nazwy zmiennej, ktora podamy w adnotacji
         String result = new ObjectMapper().writeValueAsString(bean);
 
         System.out.println(result);

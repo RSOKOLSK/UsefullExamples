@@ -13,6 +13,7 @@ public class JsonAnyGetterExample {
         bean.add("atr1", "val1");
         bean.add("atr2", "val2");
 
+        // TODO: JsonAnyGetter bedzie serializowal mape do standarowych wartosci, na tym samym poziomie jak wartość 'name'
         String result = new ObjectMapper().writeValueAsString(bean);
         System.out.println(result);
     }
